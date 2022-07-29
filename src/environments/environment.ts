@@ -4,11 +4,20 @@
 
 export const environment = {
   production: false,
-  weatherApiBaseUrl:'https://community-open-weather-map.p.rapidapi.com/weather',
+  weatherApiBaseUrl:'https://yahoo-weather5.p.rapidapi.com/weather',
+                   
+  weatherApiBaseUrlhumidity:'https://bestweather.p.rapidapi.com/weather/',
+
+  XRapidAPIHostHeaderNamehumidity:'X-RapidAPI-Host',
   XRapidAPIHostHeaderName:'X-RapidAPI-Host',
-  XRapidAPIHostHeaderValue:'community-open-weather-map.p.rapidapi.com',
+  XRapidAPIHostHeaderValuehumidity:'bestweather.p.rapidapi.com',
+  XRapidAPIHostHeaderValue:'yahoo-weather5.p.rapidapi.com',
   XRapidAPIKeyHeaderName:'X-RapidAPI-Key',
-  XRapidAPIKeyHeaderValue:'a9295cd61dmsh93c03e2f9809f16p197e9djsnae1eb4962a5d'
+  XRapidAPIKeyHeaderValue:'a9295cd61dmsh93c03e2f9809f16p197e9djsnae1eb4962a5d',
+  XRapidAPIKeyHeaderValuejumidity:'00339c2e65msha0a89b921f248f8p1f5f8fjsnd88a26af21d3'
+  
+                        
+  
 };
 
 /*

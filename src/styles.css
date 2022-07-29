@@ -16,23 +16,28 @@
 
 }
 
+.m-loc {
+    margin: 21px 0;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     width: 100%;
-    height: 100vh;
     background-color: var(--blue-1);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 
 .container {
     width: 400px;
-    height: 80vh;
+    height: 85vh;
     background-color: var(--blue-2);
     border-radius: 20px;
     box-shadow: 10px 10px 10px var(--shadow-dark);
+    margin-bottom: 17px;
 }
 
 .upper-data {
@@ -44,8 +49,7 @@ body {
     border-top-right-radius: 20px;
 }
 
-.lower-data
-{
+.lower-data {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -90,12 +94,19 @@ body {
     font-weight: 900;
 }
 
+.weather-description {
+    color: var(--white);
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 300;
+}
+
 .more-info-label {
     color: var(--white);
 
 }
 
-.more-info-container{
+.more-info-container {
     flex: 1;
     background-color: var(--shadow-light);
     border-bottom-left-radius: 20px;
@@ -106,15 +117,15 @@ body {
     flex-wrap: wrap;
 
 }
-.info-block
-{
+
+.info-block {
     width: 50%;
     display: flex;
     flex-direction: row;
 
 }
-.info-block-label
-{
+
+.info-block-label {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -122,30 +133,29 @@ body {
     align-items: center;
 }
 
-.info-block-label img{
+.info-block-label img {
     width: 2em;
 }
 
-.info-block-label span{
+.info-block-label span {
     color: var(--white);
     font-size: 0.8em;
 }
-.info-block-value
-{
+
+.info-block-value {
     width: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     color: var(--white);
 }
- 
-.search
-{
-    margin-bottom:1em ;
+
+.search {
+    margin-bottom: 1em;
     text-align: center;
 }
 
-.search input{
+.search input {
     background-color: var(--shadow-light);
     outline: none;
     border-radius: 20px;
@@ -155,18 +165,114 @@ body {
     border: none;
     color: var(--white);
 }
-.search input::placeholder
-{
-    color: var(--greay-1);
+
+.search input::placeholder {
+    color: rgba(255, 255, 255, 0.562)
 
 }
 
+.container-2 {
+    width: 510px;
+    height: 85vh;
+    background-color: var(--blue-2);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px var(--shadow-dark);
+    display: none;
+}
+
+.week-day1 {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    width: 60px;
+    height: 96%;
+    border-end-start-radius: 23px;
+    margin: 6px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.week-day7 {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    width: 60px;
+    height: 96%;
+    margin: 6px 4px;
+    border-end-end-radius: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+[class*=week-day] {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    width: 60px;
+    height: 96%;
+    margin: 6px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.days-name {
+    padding: 3px;
+    color: rgba(255, 255, 255, 0.612);
+}
+
+.day-icon {
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.612);
+    margin-top: 14px;
+}
+
+.tempreture-min,
+.humidity-level {
+    padding: 5px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.612);
+}
+
+.humidity {
+    padding: 12px;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.612);
+}
+
+.humidity-flex {
+    display: flex
+}
+
+.description {
+    padding: 5px;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.612);
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.container-responsive {
+    display: flex;
+    width: 70vw;
+    justify-content: space-around;
+}
+
+
+
 @media (max-width: 768px) {
     .container {
-        width: 90vw;
+        width: 93vw;
+        margin-bottom: 17px;
         height: 70vh;
-
-        
     }
- 
+    .container-responsive {
+        width: 88vw;
+    }
+
+}
+
+@media (min-width: 1350px) and (min-height: 729px) {
+    .container-2 {
+        display: block;
+    }
+
+
 }
